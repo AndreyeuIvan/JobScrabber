@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JobScraber</title>
+	<style>
+		section{
+			display: grid;
+			gap: 20px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+	</style>
+</head>
+<body>
+	<h1> Search jobs</h1>
+
+	<h3> We get following results {{resultsNumber}} for {{searchBy}} </h3>
+	<a href="/export?keyword={{searchBy}}">Download csv</a>
+	<section>
+		<h4>Company</h4>
+		<h4>Job title</h4>
+		<h4>Location</h4>
+		<h4>Link</h4>
+	{% for job in jobs %}
+		<span>{{job.company}}</span>
+		<a href="{{job.link}}" target='_blank'>{{job.title}}</a>
+		<span>{{job.location}}</span>
+		<a href="{{job.link}}" target='_blank'>link</a>
+	{% endfor %}
+	</section>
+</body>
+</html>
