@@ -1,4 +1,4 @@
-from main import db
+from main_mongo import db
 
 
 class Keyword(db.Model):

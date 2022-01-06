@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parser_rabota/fast_graber/tel_bot/aiogram_bot_template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parser_rabota/fast_graber/tel_bot/discount_bot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parser_rabota/fast_graber/tel_bot/telegram-bot-lessons" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/parser_rabota/tel_bot/discount_bot" vcs="Git" />
+  </component>
+</project>

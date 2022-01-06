@@ -13,20 +13,13 @@ HEAD = {
 }
 
 def extract_max_page(url):
-
 	rabota_req = get(url, headers=HEAD)
-
 	pages = []
-
 	#Без заголовков работать не будет, в силу защиты зайта. Используя зашоловки, эмитируется запрос и пропускает его
-
 	rabota_soup = BeautifulSoup(rabota_req.text, 'html.parser')
-
 	paginator = rabota_soup.find_all('div', {'data-qa':'pager-block'})
-
 	for page in paginator:
 		pages.append(int(page.find('a').text))
-
 	return pages[-1]
 
 

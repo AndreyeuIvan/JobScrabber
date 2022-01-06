@@ -1,2 +1,5 @@
 Aim of the project:
-parse data from rabota.tut.by
+parse data from:
+rabota.by,
+dev.py.
+

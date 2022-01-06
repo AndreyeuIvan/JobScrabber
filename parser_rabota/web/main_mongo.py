@@ -12,7 +12,6 @@ app.config["MONGO_URI"] = "mongodb+srv://USER:USER@cluster0.aijn3.mongodb.net/fl
 mongo = PyMongo(app)
 db_operations = mongo.db.test
 
-
 db_ = []
 
 
@@ -25,7 +24,6 @@ def home():
 def report():
 	'''Get keyword, transform keyword to lower case, check if keyword is in a db, if not create new cluster.'''
 	keyword = request.args.get('keyword')
-	#import pdb;pdb.set_trace()
 	if keyword is not None:
 		keyword = keyword.lower()
 		getDBope = db_operations.find({'keyword':keyword})
