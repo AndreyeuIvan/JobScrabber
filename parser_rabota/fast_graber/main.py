@@ -12,7 +12,7 @@ Base.metadata.create_all(bind=engine)
 app.include_router(hh_parser.router)
 app.include_router(dev_parser.router)
 
-@app.get('/')
-def main():
-    return RedirectResponse('/docs')
 
+@app.get("/")
+def main():
+    return RedirectResponse("/docs")
